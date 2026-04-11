@@ -315,3 +315,34 @@ body {
 @media (max-width: 768px) {
   .section { padding: 48px 16px; }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE OVERRIDES
+   ============================================ */
+
+/* Hide desktop nav / show hamburger on mobile */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  .desktop-floating-stars {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+/* Ensure touch targets are comfortable on mobile */
+@media (max-width: 480px) {
+  /* Tighten hero CTA */
+  .hero-cta-full {
+    max-width: 100% !important;
+  }
+}
